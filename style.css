@@ -340,8 +340,11 @@ section { padding-block: clamp(56px, 8vw, 96px); }
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 0.85fr 1.15fr;
-  gap: clamp(32px, 6vw, 72px);
+  grid-template-columns: 1fr;
+}
+
+.contact-intro {
+  max-width: 680px;
 }
 
 .contact-details {
@@ -360,60 +363,6 @@ section { padding-block: clamp(56px, 8vw, 96px); }
   color: var(--color-ink-soft);
 }
 .contact-details a { font-weight: 600; }
-
-.contact-form {
-  background: var(--color-bg);
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius-m);
-  padding: clamp(24px, 4vw, 38px);
-}
-
-.form-field {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.form-field label {
-  font-weight: 600;
-  font-size: 0.95rem;
-}
-
-.form-field input,
-.form-field textarea {
-  font: inherit;
-  color: var(--color-ink);
-  background: var(--color-surface);
-  border: 1px solid var(--color-line-strong);
-  border-radius: var(--radius-s);
-  padding: 12px 14px;
-  resize: vertical;
-}
-.form-field input:focus,
-.form-field textarea:focus {
-  border-color: var(--color-accent);
-}
-
-.form-field.has-error input,
-.form-field.has-error textarea {
-  border-color: #B4432E;
-}
-
-.field-error {
-  min-height: 1.1em;
-  font-size: 0.85rem;
-  color: #B4432E;
-}
-
-.form-submit { width: 100%; margin-top: 4px; }
-
-.form-status {
-  margin-top: 14px;
-  font-size: 0.95rem;
-  min-height: 1.2em;
-}
-.form-status.success { color: var(--color-secondary); font-weight: 600; }
 
 /* ==========================================================================
    Footer
