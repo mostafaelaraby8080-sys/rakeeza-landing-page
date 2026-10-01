@@ -21,6 +21,15 @@ document.addEventListener('DOMContentLoaded', function () {
         navToggle.setAttribute('aria-expanded', 'false');
       });
     });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && primaryNav.classList.contains('is-open')) {
+        primaryNav.classList.remove('is-open');
+        navToggle.classList.remove('is-active');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.focus();
+      }
+    });
   }
 
   /* --------------------------------------------------------------------
